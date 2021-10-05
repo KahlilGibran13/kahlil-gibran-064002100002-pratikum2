@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Oct  5 21:46:09 2021
+
+@author: user
+NAMA :KAHLIL GIBRAN
+NIM :0640021000022
+"""
+
+A = int(input("masukan angkanya sisi a : "))
+B = int(input("masukan angkanya sisi b : "))
+C = int(input("masukan angkanya sisi c: "))
+
+
+if A == B and B == C : 
+    print("segitiga sama sisi : ")
+elif (A + B <= C ) or ( A + C <= B ) or ( B + C <= A ) :
+    print(" bukan segitiga")
+elif A == B or B == C or A == C :
+    print("segitiga sama kaki : ")
+elif A*A + B*B == C*C or A*A + C*C == B*B or C*C + B*B == A*A :
+    print("segitiga siku siku")
+else: 
+    print("segitga sembarang")
